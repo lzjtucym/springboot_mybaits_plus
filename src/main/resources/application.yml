@@ -1,0 +1,27 @@
+server:
+  port: 9900
+  servlet:
+    context-path: /
+
+spring:
+  datasource: # 数据源配置
+    url: jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver # mysql8.0以前使用com.mysql.jdbc.Driver
+
+# mybatis-plus配置
+mybatis-plus:
+  # MyBatis Mapper所对应的XML文件位置
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  # MyBatis 打印日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    # 关闭MP3.0自带的banner
+    banner: false
+
+# Logger Config
+logging:
+  level:
+    com.cym.springboot_mybaits_plus: debug
