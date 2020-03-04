@@ -1,6 +1,6 @@
 package com.cym.springboot_mybaits_plus.mapper;
 
-import com.cym.springboot_mybaits_plus.entity.UserRole;
+import com.cym.springboot_mybaits_plus.entity.RoleMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author cym
  * @since 2019-12-07
  */
-public interface UserRoleMapper extends BaseMapper<UserRole> {
+public interface RoleMenuMapper extends BaseMapper<RoleMenu> {
 
 }

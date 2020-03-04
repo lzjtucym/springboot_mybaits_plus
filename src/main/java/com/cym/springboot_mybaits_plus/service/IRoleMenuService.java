@@ -1,6 +1,6 @@
 package com.cym.springboot_mybaits_plus.service;
 
-import com.cym.springboot_mybaits_plus.entity.UserRole;
+import com.cym.springboot_mybaits_plus.entity.RoleMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author cym
  * @since 2019-12-07
  */
-public interface IUserRoleService extends IService<UserRole> {
+public interface IRoleMenuService extends IService<RoleMenu> {
 
 }

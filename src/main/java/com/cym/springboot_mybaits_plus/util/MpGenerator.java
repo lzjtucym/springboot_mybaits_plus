@@ -57,7 +57,7 @@ public class MpGenerator {
 
     // 数据源配置
     DataSourceConfig dsc = new DataSourceConfig();
-    dsc.setUrl("jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=Asia/Shanghai");
+    dsc.setUrl("jdbc:mysql://127.0.0.1:3306/iwork?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=Asia/Shanghai");
     // dsc.setSchemaName("public");
     dsc.setDriverName("com.mysql.cj.jdbc.Driver");
     dsc.setUsername("root");
@@ -117,7 +117,7 @@ public class MpGenerator {
     strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
     strategy.setSuperEntityColumns("id", "update_time", "create_time", "deleted");
     strategy.setControllerMappingHyphenStyle(true);
-    strategy.setTablePrefix("test_"); // 表前缀
+    strategy.setTablePrefix("syn_"); // 表前缀
     mpg.setStrategy(strategy);
     mpg.setTemplateEngine(new FreemarkerTemplateEngine());
     mpg.execute();

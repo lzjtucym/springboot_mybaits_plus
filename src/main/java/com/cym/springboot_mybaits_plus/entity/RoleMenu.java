@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- *  用户角色
+ *  用户菜单
  * </p>
  *
  * @author cym
@@ -19,13 +19,13 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("syn_user_role")
-@ApiModel(value = "UserRole对象", description = "")
-public class UserRole extends Model {
+@TableName("syn_role_menu")
+@ApiModel(value = "RoleMenu对象", description = "")
+public class RoleMenu extends Model {
 
   private static final long serialVersionUID = 1L;
 
-  private Integer uid;
+  private Integer menuId;
 
   private Integer roleId;
 
